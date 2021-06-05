@@ -1,0 +1,161 @@
+// //Vendor
+// @import "./vendor/_vendor-dir";
+
+// //Abstracts
+// @import "./abstracts/_abstracts-dir";
+
+// //Base Styles
+// @import "./base/_base-dir";
+
+// //Components
+// @import "./components/_components-dir";
+
+// //Layout
+// @import "./layouts/_layouts-dir";
+
+@font-face {
+  font-family: "News Cycle";
+  src: url("../fonts/News_Cycle/NewsCycle-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Catamaran";
+  src: url("../fonts/Catamaran/static/Catamaran-Regular.ttf");
+}
+
+$header-font: "News Cycle";
+$main-font: "Catamaran";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-image: url(../images/desktop-white.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.notes-container {
+  position: relative;
+  margin-top: 10vh;
+  min-width: 30%;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 6px 6px 2px rgba(0, 0, 0, 0.1);
+
+  background-image: repeating-linear-gradient(
+    180deg,
+    darken(#fff, 10%),
+    darken(#fff, 10%) 1px,
+    #fff 1px,
+    #fff 30px
+  );
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 155px;
+    height: 50px;
+    top: 11px;
+    left: -43px;
+    background-color: rgba(75, 72, 72, 0.3);
+    border-left: 2px dotted gray;
+    border-right: 2px dotted gray;
+    transform: rotate(-45deg);
+  }
+}
+
+.heading {
+  border-bottom: 3px solid;
+  font-family: $header-font;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px 0;
+  color: rgb(24, 24, 24);
+  font-size: 1rem;
+}
+
+.item {
+  form {
+    padding: 6px 0;
+    margin: 18px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  label {
+    font-family: $main-font;
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+  li {
+    width: 25vw;
+    height: 3rem;
+    max-width: 25vw;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  li div {
+    display: flex;
+    flex-direction: row;
+  }
+  li div button {
+    display: flex;
+    width: 1rem;
+    height: 2rem;
+  }
+}
+
+input[type="text"] {
+  border: none;
+  width: 66%;
+  height: 1.2rem;
+}
+
+input[type="submit"] {
+  width: 6rem;
+  height: 1.2rem;
+  border: none;
+  background-color: #6c132b;
+  color: #fff;
+  font-family: $main-font;
+  border-radius: 40px;
+  font-size: 0.8rem;
+  font-weight: bolder;
+}
+
+// Cross out the item once it's been checked off
+
+.completed {
+  /* some fancy styles */
+  text-decoration: line-through;
+}
+
+.count,
+.done {
+  @extend .heading;
+  font-family: $main-font;
+  text-decoration: initial;
+  // font-weight: lighter;
+  border-top: 3px solid;
+  border-bottom: none;
+  font-size: 1rem;
+}
