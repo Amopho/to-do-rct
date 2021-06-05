@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Amopho/to-do-rct.git/static/css/main.72c0bf28.chunk.css",
+    "main.js": "/Amopho/to-do-rct.git/static/js/main.7cf0462f.chunk.js",
+    "main.js.map": "/Amopho/to-do-rct.git/static/js/main.7cf0462f.chunk.js.map",
+    "runtime-main.js": "/Amopho/to-do-rct.git/static/js/runtime-main.4f959ab4.js",
+    "runtime-main.js.map": "/Amopho/to-do-rct.git/static/js/runtime-main.4f959ab4.js.map",
+    "static/js/2.08f50bc3.chunk.js": "/Amopho/to-do-rct.git/static/js/2.08f50bc3.chunk.js",
+    "static/js/2.08f50bc3.chunk.js.map": "/Amopho/to-do-rct.git/static/js/2.08f50bc3.chunk.js.map",
+    "index.html": "/Amopho/to-do-rct.git/index.html",
+    "static/css/main.72c0bf28.chunk.css.map": "/Amopho/to-do-rct.git/static/css/main.72c0bf28.chunk.css.map",
+    "static/js/2.08f50bc3.chunk.js.LICENSE.txt": "/Amopho/to-do-rct.git/static/js/2.08f50bc3.chunk.js.LICENSE.txt",
+    "static/media/main.scss": "/Amopho/to-do-rct.git/static/media/desktop-white.fb140f5e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4f959ab4.js",
+    "static/js/2.08f50bc3.chunk.js",
+    "static/css/main.72c0bf28.chunk.css",
+    "static/js/main.7cf0462f.chunk.js"
+  ]
+}
