@@ -2,8 +2,8 @@
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 
-const List = (props) => {
-  console.log(props);
+const List = () => {
+  console.log();
   const [userInput, setUserInput] = useState("");
   function changeHandle(e) {
     setUserInput(e.target.value);
@@ -13,7 +13,7 @@ const List = (props) => {
     // prevState - value of the last state before the recent update
     console.log(uuidv4());
     if (userInput !== "") {
-      props.setList((prevState) => [
+      .setList((prevState) => [
         ...prevState,
         { id: uuidv4(), title: userInput.trim(), done: false },
       ]);
